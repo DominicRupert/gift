@@ -1,5 +1,6 @@
 import { ProxyState } from "../AppState.js"
 import { giphyApi } from "./AxiosService.js"
+import {Gift} from "../Models/Gift.js"
 
 
 let params ={

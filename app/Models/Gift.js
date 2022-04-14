@@ -9,5 +9,6 @@ export class Gift{
         <h1>${this.tag}</h1>
         <img src="('${this.url}')" alt="">
         </div>
+        `
     }
 }
