@@ -8,11 +8,11 @@ let params ={
     rating: 'pg',
     q: ''
 }
-class ApiGiftService{
-    searchGiphy(params){
-        const res = giphyApi.get('search?'+params)
-        console.log(res)
+class  ApiGiftService{
+    async getGift(){
+        const res = await giphyApi.get('')
+        const gift = new Gift()
     }
+    
 }
-
 export const apiGiftService = new ApiGiftService();
