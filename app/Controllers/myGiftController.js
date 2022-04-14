@@ -8,6 +8,9 @@ async function _drawGifts(){
    
    
     let template = ''
-    gifts.forEach
+    gifts.forEach (g => {
+        template += g.Template
+    })
+    document.getElementById('gif-landing').innerHTML = template
 
 }

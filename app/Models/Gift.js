@@ -1,6 +1,6 @@
 export class Gift{
     constructor(data){
-        this.tag = data.tag
+        this.tag = data.title
         this.url = data.url
     }
     get Template(){
