@@ -9,10 +9,10 @@ let params ={
     q: ''
 }
 class  ApiGiftService{
-    async getGift(){
-        const res = await giphyApi.get('')
+    async searchGiphy(){
+        const res = await giphyApi.get('/search?api_key=Mz7FrQZfs574Ija8b3viGcfCgtGxTwhB&q=&rating=pg&lang=en')
         const gift = new Gift(res.data)
-        
+
     }
     
 }
