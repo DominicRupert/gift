@@ -9,5 +9,9 @@ let params ={
     q: ''
 }
 class  ApiGiftService{
+    async getGift(){
+        const res = await giphyApi.get('')
+        const gift = new Gift()
+    }
     
 }
