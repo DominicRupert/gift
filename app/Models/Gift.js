@@ -1,7 +1,7 @@
 export class Gift{
     constructor(data){
         this.tag = data.title
-        this.url = data.images.downsized_medium.url
+        this.url = data.images.downsized_medium.url || data.url
     }
     get Template(){
         return /*html*/`

@@ -1,6 +1,6 @@
 import { ProxyState } from "../AppState.js";
 import { sandboxApi } from "../Services/AxiosService.js";
-import { myGiftService } from "../Services/myGiftservice.js";
+import { myGiftService } from "../Services/MyGiftservice.js";
 import {Pop} from "../Utils/Pop.js"
 
 
@@ -12,9 +12,10 @@ export class MyGiftController{
     }
     async upload(){
        try {
-           myGiftService.upload()
+           await myGiftService.upload()
        } catch (error) {
            console.error(error)
+           Pop.toast(error.message, 'error')
        }
     }
 }

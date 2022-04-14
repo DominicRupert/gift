@@ -1,14 +1,10 @@
-import { apiGiftService } from "../Services/apiGiftService.js"
+import { apiGiftService } from "../Services/ApiGiftService.js"
 import { ProxyState } from "../AppState.js"
 import {Pop} from "../Utils/Pop.js"
 
 async function _drawGifts(){
   const gifts = ProxyState.gifts
-  //  let template = ''
-   let template = gifts[0].Template()
-  //  gifts.forEach (g => {
-  //      template += g.Template
-  //  })
+   let template = gifts[0].Template
    document.getElementById('gif-landing').innerHTML = template
    
 }
