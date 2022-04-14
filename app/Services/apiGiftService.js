@@ -16,3 +16,4 @@ class  ApiGiftService{
     }
     
 }
+export const apiGiftService = new ApiGiftService();
