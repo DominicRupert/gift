@@ -7,7 +7,6 @@ export const giphyApi = axios.create({
 
 
 
-Mz7FrQZfs574Ija8b3viGcfCgtGxTwhB
 // @ts-ignore
 export const sandboxApi = axios.create({
     baseURL: "https://bcw-sandbox.herokuapp.com/api/gifts",
