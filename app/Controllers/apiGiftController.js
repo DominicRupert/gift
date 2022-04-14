@@ -1,4 +1,6 @@
 import { apiGiftService } from "../Services/apiGiftService.js"
+import { ProxyState } from "../AppState.js"
+import {Pop} from "../Utils/Pop.js"
 
 export class ApiGiftController {
   constructor(){
