@@ -6,6 +6,7 @@ class AppState extends EventEmitter {
   values = []
 
   gifts = []
+  sandboxGifts = []
 }
 
 export const ProxyState = new Proxy(new AppState(), {

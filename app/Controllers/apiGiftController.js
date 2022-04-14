@@ -4,10 +4,11 @@ import {Pop} from "../Utils/Pop.js"
 
 async function _drawGifts(){
   const gifts = ProxyState.gifts
-   let template = ''
-   gifts.forEach (g => {
-       template += g.Template
-   })
+  //  let template = ''
+   let template = gifts[0].Template()
+  //  gifts.forEach (g => {
+  //      template += g.Template
+  //  })
    document.getElementById('gif-landing').innerHTML = template
    
 }
