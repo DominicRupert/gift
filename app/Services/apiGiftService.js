@@ -11,7 +11,8 @@ let params ={
 class  ApiGiftService{
     async getGift(){
         const res = await giphyApi.get('')
-        const gift = new Gift()
+        const gift = new Gift(res.data)
+        
     }
     
 }
