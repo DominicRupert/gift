@@ -14,8 +14,10 @@ class  ApiGiftService{
         const res = await giphyApi.get('search', { params })
         console.log(res)
         // const gift = new Gift()
-        const gifs = res.data.map(g => new Gift(g))
+        const gifs = res.data.data.map(g => new Gift(g))
         ProxyState.gifts = gifs
+        console.log(ProxyState.gifts);
     } 
+    
 }
 export const apiGiftService = new ApiGiftService();

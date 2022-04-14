@@ -4,6 +4,7 @@ import {Pop} from "../Utils/Pop.js"
 
 export class ApiGiftController {
   constructor(){
+      ProxyState.on('gift', _drawGifts)
   }
   async searchGiphy() {
     try {

@@ -12,5 +12,11 @@ async function _drawGifts(){
         template += g.Template
     })
     document.getElementById('gif-landing').innerHTML = template
+    
+}
 
+export class MyGiftController{
+    constructor (){
+        ProxyState.on('gifts', _drawGifts)
+    }
 }
