@@ -1,7 +1,7 @@
-import { ValuesController } from "./Controllers/ValuesController.js";
+import { ApiGiftController } from "./Controllers/apiGiftController.js";
 
 class App {
-  valuesController = new ValuesController();
+  apiGiftController = new ApiGiftController();
 }
 
 window["app"] = new App();

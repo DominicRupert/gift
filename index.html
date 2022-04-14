@@ -26,8 +26,16 @@
   <main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+        <div class="col-4">
+          <form id="gifSubmit" onsubmit="app.apiGiftController.searchGiphy()">
+            <label for="gif-search" name="gif-search">Search for a Gif: </label>
+            <input type="search" name="gifs" for="gif-search" id="gif-search-input"aria-describedby="gif-search" placeholder="enter a tag or a url...">
+          </form>
+        </div>
+        <div class="col-8">
+          <div class="bg-secondary p-2" id="gif-landing">
+            <!-- gifs go here -->
+          </div>
         </div>
       </div>
     </div>
@@ -43,6 +51,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
     integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="app/main.js" type="module"></script>
 </body>
 
